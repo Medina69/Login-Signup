@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    a {
+        text-decoration: none;
+        color: white;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        transition: 0.5s;
+        &:hover {
+            border-top: 2px solid #985f12;
+            border-bottom: 2px solid #985f12;
+            color: #985f12;
+        }
+    }
+    .Logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img:nth-child(2) {
+            width: 150px;
+        }
+        img:nth-child(1) {
+            width: 70px;
+        }
+    }
+}

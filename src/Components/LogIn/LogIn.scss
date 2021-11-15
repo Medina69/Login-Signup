@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+body {
+    background-image: url(../../images/background/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Log-in {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .left {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .head{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .logo {
+                width: 100px;
+            }
+            .word {
+                width: 100px;
+                margin-top: 30px;
+            }
+        }
+        .inputs{
+            margin-top: -50px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .login, .password{
+                padding: 0 20px;
+                width: 380px;
+                background: #ececec;
+                border: 0;
+                font-size: 1em;
+                border-radius: 20px;
+                z-index: 1;
+                height: 38px;
+                color: #808080;
+                font-family: monospace, Arial, Helvetica, sans-serif;
+            }
+            .input-icon{
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                .fas{
+                    position: absolute;
+                    right: 10px;
+                    top: 13px;
+                    color: #808080;
+                    z-index: 3;
+                }
+            }
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            background-color: #8E5609;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            margin-top: -30px;
+            transition: .5s;
+            &:hover{
+                background: #472b03;
+            }
+        }
+        .hr-p-hr{
+            margin-top: -100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-family: "Righteous", cursive;
+            hr{
+                transform: rotate(90deg);
+                width: 2px;
+                height: 100px;
+                border: none;
+            }
+            hr:nth-child(1){
+                background:linear-gradient(#8E5609, rgba(255, 255, 255, 0));
+            }
+            hr:nth-child(3){
+                background:linear-gradient(rgba(255, 255, 255, 0), #8E5609 );
+            }
+        }
+        .icons{
+            margin-top: -80px;
+            margin-right: 10px;
+        }
+        .p{
+            margin-top: -100px;
+            height: 50px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            p{
+                font-family: "Righteous", cursive;
+                color: white;
+                text-align: center;
+                
+            }
+            a{
+                text-decoration: none;
+                color: #8E5609;
+                font-family: "Righteous", cursive;
+                margin-top: -15px;
+            }
+        }
+    }
+    .right {
+        width: 850px;
+        color: #ffff;
+        font-family: "Righteous", cursive;
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
